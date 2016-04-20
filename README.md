@@ -1,8 +1,6 @@
 Front end portion of the IGN-Code Foo Application for an internship. 
 
-`git clone https://github.com/MindfulBell/ign-application.git`
-
-Nav into front-end project
+`git clone https://github.com/MindfulBell/react-menu-list.git`
 
 `npm install`
 
