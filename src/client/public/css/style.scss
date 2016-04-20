@@ -1,0 +1,119 @@
+$red: #C20000;
+$gray: #9E9E9E;
+
+
+// MAIN //
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#main {
+    border: 10px solid black;
+    padding: 0px;
+}
+
+// BUTTONS //
+
+.filterholder {
+    margin: 25px auto;
+    width: 80%;
+}
+.filters {
+    background-color: white;
+    color: $red;
+    width: 50%;
+    border: 2px solid $red;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+#vidbutton {
+    border-radius: 0px 25px 25px 0px;
+    outline: none;
+}
+
+#articlebutton {
+    border-radius: 25px 0 0 25px;
+    outline: none;
+}
+
+
+// LIST OF ITEMS //
+
+ol {
+    padding-left: 0px;
+    margin-top: 30px;
+}
+
+li {
+    list-style-type: none;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: background-position .2s ease;
+    &:hover {
+        background-position: 40% 40%;
+        color: white;
+    }
+    padding-top: 10px;
+    white-space: nowrap;
+    border-bottom: 1px solid $gray;
+}
+
+#i10 {
+    border: none;
+}
+
+a {
+    color: black;
+    &:hover {
+        text-decoration: none;
+        color: white;
+    }
+}
+p {
+    font-size: .85em;
+    line-height: 100%;
+    padding: 1px;
+    margin-bottom: 5px;
+}
+
+.bold {
+    font-weight: bold;
+}
+.title {
+    display: inline;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.subtext {
+    color: $gray;
+    padding-top: 3px;
+    padding-left: 49px;
+}
+.time {
+    color: $gray;
+    padding-right: 15px;
+    float: right;
+}
+.num {
+    float: left;
+    display: inline;
+    padding: 5px 15px 0px 18px;
+}
+.see-more {
+    transition: all .2s ease;
+    color: $gray;
+    padding-left: 35px;
+    margin-top: -15px;
+    cursor: pointer;
+    font-size: .7em;
+    &:hover {
+        color: white;
+        text-shadow: 0px 0px 6px black;
+    }
+}
