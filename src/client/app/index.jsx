@@ -26,7 +26,6 @@ class App extends Component {
   getData(extension){
       const self = this;
       const URL = `https://ign-apis.herokuapp.com/${extension}`;
-      console.log(URL)
       $.ajax({
           url: URL,
           dataType: 'jsonp',
@@ -34,7 +33,6 @@ class App extends Component {
           crossDomain: true
       }).then(function(response){
       	if (extension === 'videos') {
-      		console.log('fired')
       		self.setState({vidData: response.data})
       	}
       	else {

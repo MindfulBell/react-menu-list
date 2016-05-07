@@ -106,7 +106,6 @@
 	    value: function getData(extension) {
 	      var self = this;
 	      var URL = 'https://ign-apis.herokuapp.com/' + extension;
-	      console.log(URL);
 	      _jquery2.default.ajax({
 	        url: URL,
 	        dataType: 'jsonp',
@@ -114,7 +113,6 @@
 	        crossDomain: true
 	      }).then(function (response) {
 	        if (extension === 'videos') {
-	          console.log('fired');
 	          self.setState({ vidData: response.data });
 	        } else {
 	          self.setState({ articleData: response.data });
